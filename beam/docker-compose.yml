@@ -1,0 +1,17 @@
+services:
+  dev:
+    build: .devcontainer
+    image: devcontainer:latest
+    shm_size: "8g"
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
