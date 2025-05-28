@@ -1,0 +1,21 @@
+{
+  "name": "beam",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-python.black-formatter",
+        "ms-python.flake8",
+        "ms-python.isort",
+        "ms-python.python",
+        "ms-toolsai.datawrangler",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}

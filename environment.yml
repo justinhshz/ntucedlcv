@@ -1,0 +1,14 @@
+name: JPyDLCV
+channels:
+  - conda-forge
+dependencies:
+  - matplotlib=3.10.3
+  - pandas=2.2.3
+  - tqdm=4.67.1
+  - ultralytics=8.3.143
+  - pip:
+      - opencv-python
+      - torch
+      - torchvision
+      - torchaudio
+      - --extra-index-url=https://download.pytorch.org/whl/cu128
