@@ -44,7 +44,7 @@ conda env update -f environment.yml
 
 ## 📂 Data Preparation
 
-1. Go to the [Group 8](https://drive.google.com/drive/folders/10LvxTu-El4GAFFdjv2wtDrGA4MN3xhgp?usp=drive_link) folder on Google Drive and download all files in it.
+1. Go to the [Group 8](https://drive.google.com/drive/folders/10LvxTu-El4GAFFdjv2wtDrGA4MN3xhgp?usp=drive_link) folder on Google Drive and download the `dlcv.zip` file and extract it. It contains the required folders: `beam/`, `column/`, and `wall/`.
 2. The folder structure should look like the following (example: `beam/`; other folders are similar):
 
 ```
