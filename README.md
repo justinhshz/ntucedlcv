@@ -1,3 +1,7 @@
+# 🏁 NTUCE DLCV 113-2 Final Competition
+
+**Vision-based advanced damage classification of columns, beams, and walls.** 📷
+
 ## 🚀 Usage Instructions
 
 We offer two recommended execution methods. Please choose according to your development environment and preferences:
@@ -72,48 +76,48 @@ beam/
 
 Open and execute the following Jupyter Notebooks in order:
 
-> ⚠️ **Note:** When running a Jupyter Notebook for the first time, you might see a prompt asking to install the `ipykernel` package, which is required to run notebooks in the selected Python environment. Simply click "Install" to allow Jupyter to automatically install the necessary kernel, after which the notebook will start running.
+> ⚠️ **Note:** When running a Jupyter Notebook for the first time, you might see a prompt asking to install the `ipykernel` package, which is required to run notebooks in the selected Python environment. Simply click `Install` to allow Jupyter to automatically install the necessary kernel, after which the notebook will start running.
 
 Additionally, if you wish to work on multiple structure types (e.g., beam, column, wall), you may open each folder in its own Dev Container. Each container runs in an isolated environment, so multiple models can be trained and tested concurrently without conflict.
 
 ### 1. `damage_classification.ipynb`
 
-* **To train from scratch:** Click "Run All"
+* **To train from scratch:** Click `Run All`
 * **To use pre-trained models:** Execute the following cells:
 
-  * `0. Imports & Global Setting`: first 3 cells
-  * `1. Dataset / DataLoader`: first cell
-  * `2. Define Model`: all cells
-  * `5. Prediction & Submission`: all cells
+  * **_0. Imports & Global Setting_**: first 3 cells
+  * **_1. Dataset / DataLoader_**: first cell
+  * **_2. Define Model_**: all cells
+  * **_5. Prediction & Submission_**: all cells
 
 ---
 
 ### 2. `damage_detection.ipynb`
 
-* **To train from scratch:** Click "Run All"
+* **To train from scratch:** Click `Run All`
 * **To use pre-trained models:** Execute the following cells:
 
-  * `0. Imports & Global Setting`: all cells
-  * `1. Define Model`: all cells
-  * `3. Prediction & Submission`: all cells
+  * **_0. Imports & Global Setting_**: all cells
+  * **_1. Define Model_**: all cells
+  * **_3. Prediction & Submission_**: all cells
 
 ---
 
 ### 3. `crack_classification.ipynb`
 
-* **To train from scratch:** Click "Run All"
+* **To train from scratch:** Click `Run All`
 * **To use pre-trained models:** Execute the following cells:
 
-  * `0. Imports & Global Setting`: first 3 cells
-  * `1. Dataset / DataLoader`: first cell
-  * `2. Define Model`: all cells
-  * `5. Prediction & Submission`: all cells
+  * **_0. Imports & Global Setting_**: first 3 cells
+  * **_1. Dataset / DataLoader_**: first cell
+  * **_2. Define Model_**: all cells
+  * **_5. Prediction & Submission_**: all cells
 
 ---
 
 ### 4. `final_submission.ipynb`
 
-* Click "Run All" to generate the final result:
+* Click `Run All` to generate the final result:
 
   ```
   output/submission.csv
