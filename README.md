@@ -2,6 +2,17 @@
 
 **Vision-based advanced damage classification of columns, beams, and walls.** 📷
 
+## 🔍 Project Overview
+
+This repository provides a complete solution for the NTUCE DLCV 113-2 Final Competition. It focuses on vision-based classification of structural damage across three common structural components.
+
+- 🧱 **Targets**: Columns, Beams, and Walls
+- 🧠 **Methods**: Vision-based damage analysis using EfficientNet for classification and YOLO for detection
+- 📊 **Outputs**: CSV file with final predictions for submission
+- 🔧 **Workflows**: Jupyter Notebooks for training and inference across three structure types
+
+---
+
 ## 🚀 Usage Instructions
 
 We offer two recommended execution methods. Please choose according to your development environment and preferences:
@@ -80,42 +91,45 @@ Open and execute the following Jupyter Notebooks in order:
 
 Additionally, if you wish to work on multiple structure types (e.g., beam, column, wall), you may open each folder in its own Dev Container. Each container runs in an isolated environment, so multiple models can be trained and tested concurrently without conflict.
 
-### 1. `damage_classification.ipynb`
+### 1. Classify Damage Severity Levels
+*Notebook: `damage_classification.ipynb`*
 
 * **To train from scratch:** Click `Run All`
-* **To use pre-trained models:** Execute the following cells:
+* **To use pre-trained models:** Run the following cells:
 
-  * **_0. Imports & Global Setting_**: first 3 cells
-  * **_1. Dataset / DataLoader_**: first cell
-  * **_2. Define Model_**: all cells
-  * **_5. Prediction & Submission_**: all cells
+  * **_0. Imports & Global Setting_** — execute the first three code cells
+  * **_1. Dataset / DataLoader_** — execute the first code cell
+  * **_2. Define Model_** — execute all code cells in this section
+  * **_5. Prediction & Submission_** — execute all code cells in this section
+
+---
+### 2. Detect Damage Types
+*Notebook: `damage_detection.ipynb`*
+
+* **To train from scratch:** Click `Run All`
+* **To use pre-trained models:** Run the following cells:
+
+  * **_0. Imports & Global Setting_** — execute all code cells in this section
+  * **_1. Define Model_** — execute all code cells in this section
+  * **_3. Prediction & Submission_** — execute all code cells in this section
 
 ---
 
-### 2. `damage_detection.ipynb`
+### 3. Classify Crack Presence
+*Notebook: `crack_classification.ipynb`*
 
 * **To train from scratch:** Click `Run All`
-* **To use pre-trained models:** Execute the following cells:
+* **To use pre-trained models:** Run the following cells:
 
-  * **_0. Imports & Global Setting_**: all cells
-  * **_1. Define Model_**: all cells
-  * **_3. Prediction & Submission_**: all cells
+  * **_0. Imports & Global Setting_** — execute the first three code cells
+  * **_1. Dataset / DataLoader_** — execute the first code cell
+  * **_2. Define Model_** — execute all code cells in this section
+  * **_5. Prediction & Submission_** — execute all code cells in this section
 
 ---
 
-### 3. `crack_classification.ipynb`
-
-* **To train from scratch:** Click `Run All`
-* **To use pre-trained models:** Execute the following cells:
-
-  * **_0. Imports & Global Setting_**: first 3 cells
-  * **_1. Dataset / DataLoader_**: first cell
-  * **_2. Define Model_**: all cells
-  * **_5. Prediction & Submission_**: all cells
-
----
-
-### 4. `final_submission.ipynb`
+### 4. Generate Final Submission File
+*Notebook: `final_submission.ipynb`*
 
 * Click `Run All` to generate the final result:
 
