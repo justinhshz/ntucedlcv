@@ -1,5 +1,13 @@
 # 🏁 NTUCE DLCV 113-2 Final Competition
 
+[![Dev Container](https://img.shields.io/badge/devcontainer-Supported-success?logo=docker&logoColor=white)](https://code.visualstudio.com/docs/devcontainers/containers)
+[![Miniconda](https://img.shields.io/badge/Anaconda-Miniconda-44A833?logo=anaconda&logoColor=white)](https://www.anaconda.com/docs/getting-started/miniconda/main)
+[![Python Version](https://img.shields.io/badge/Python-3.11.12-3776AB?logo=python&logoColor=white)](https://www.python.org/downloads/release/python-31112/)
+[![Ultralytics YOLOv9](https://img.shields.io/badge/Ultralytics-YOLOv9t-4051b5?logo=ultralytics)](https://docs.ultralytics.com/models/yolov9/)
+[![PyTorch Version](https://img.shields.io/badge/PyTorch-2.7.0-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/get-started/locally/)
+[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Ready-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?logo=github)](LICENSE)
+
 **Vision-based advanced damage classification of columns, beams, and walls.** 📷
 
 ## 🔍 Project Overview
