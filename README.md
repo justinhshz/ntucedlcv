@@ -10,6 +10,24 @@
 
 **Vision-based advanced damage classification of columns, beams, and walls.** 📷
 
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## 📄 Table of Contents
+
+* 🔍 [Project Overview](#-project-overview)
+* 🚀 [Usage Instructions](#-usage-instructions)
+  * ✅ [Option 1 (Recommended): Use WSL2 + Docker + Dev Container](#-option-1-recommended-use-wsl2--docker--dev-container)
+  * 💥 [Option 2: Use Local Conda Environment on Windows](#-option-2-use-local-conda-environment-on-windows)
+* 📂 [Data Preparation](#-data-preparation)
+* 🧪 [Running the Notebooks](#-running-the-notebooks)
+  * [1. Classify Damage Severity Levels](#1-classify-damage-severity-levels)
+  * [2. Detect Damage Types](#2-detect-damage-types)
+  * [3. Classify Crack Presence](#3-classify-crack-presence)
+  * [4. Generate Final Submission File](#4-generate-final-submission-file)
+* 🛠️ [Verified System Configuration](#%EF%B8%8F-verified-system-configuration)
+
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 ## 🔍 Project Overview
 
 This repository provides a complete solution for the NTUCE DLCV 113-2 Final Competition. It focuses on vision-based classification of structural damage across three common structural components.
@@ -19,13 +37,13 @@ This repository provides a complete solution for the NTUCE DLCV 113-2 Final Comp
 - 📊 **Outputs**: CSV file with final predictions for submission
 - 🔧 **Workflows**: Jupyter Notebooks for training and inference across three structure types
 
----
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## 🚀 Usage Instructions
 
 We offer two recommended execution methods. Please choose according to your development environment and preferences:
 
----
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ### ✅ Option 1 (Recommended): Use WSL2 + Docker + Dev Container
 
@@ -35,21 +53,21 @@ This method effectively avoids compatibility issues and package errors on Window
 
 1. Open PowerShell and run the following command to install WSL2:
 
-   ```bash
-   wsl --install
-   ```
+    ```bash
+    wsl --install
+    ```
 2. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) and make sure the Docker Engine is running.
 3. Open VSCode and install the `Dev Containers` extension.
 4. After installation, press `Ctrl + Shift + P` and select:
 
-   ```
-   Dev Containers: Open Folder in Container
-   ```
+    ```
+    Dev Containers: Open Folder in Container
+    ```
 
-   Choose the folder corresponding to the structure type you want to work on (e.g., `beam/`, `column/`, or `wall/`). Each folder will launch a separate container.
+    Choose the folder corresponding to the structure type you want to work on (e.g., `beam/`, `column/`, or `wall/`). Each folder will launch a separate container.
 5. The first time you launch it, Docker will automatically build the image and install the conda environment. This process may take some time—please be patient.
 
----
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ### 💥 Option 2: Use Local Conda Environment on Windows
 
@@ -63,7 +81,7 @@ conda activate JPyDLCV
 conda env update -f environment.yml
 ```
 
----
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## 📂 Data Preparation
 
@@ -85,19 +103,22 @@ beam/
 
 3. Place the downloaded data into the corresponding folders in the GitHub repository:
 
-   * `beam/data`: Place all four subfolders (`crack_classification`, `damage_classification`, `damage_detection`, `test`)
-   * `beam/output`: Place all three subfolders (`crack_classification`, `damage_classification`, `damage_detection`)
-   * Repeat similarly for `column/` and `wall/`
+    * `beam/data`: Place all four subfolders (`crack_classification`, `damage_classification`, `damage_detection`, `test`)
+    * `beam/output`: Place all three subfolders (`crack_classification`, `damage_classification`, `damage_detection`)
+    * Repeat similarly for `column/` and `wall/`
 
----
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## 🧪 Running the Notebooks
 
 Open and execute the following Jupyter Notebooks in order:
 
-> ⚠️ **Note:** When running a Jupyter Notebook for the first time, you might see a prompt asking to install the `ipykernel` package, which is required to run notebooks in the selected Python environment. Simply click `Install` to allow Jupyter to automatically install the necessary kernel, after which the notebook will start running.
+> [!TIP]
+> When running a Jupyter Notebook for the first time, you might see a prompt asking to install the `ipykernel` package, which is required to run notebooks in the selected Python environment. Simply click `Install` to allow Jupyter to automatically install the necessary kernel, after which the notebook will start running.
 
 Additionally, if you wish to work on multiple structure types (e.g., beam, column, wall), you may open each folder in its own Dev Container. Each container runs in an isolated environment, so multiple models can be trained and tested concurrently without conflict.
+
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ### 1. Classify Damage Severity Levels
 *Notebook: `damage_classification.ipynb`*
@@ -105,23 +126,24 @@ Additionally, if you wish to work on multiple structure types (e.g., beam, colum
 * **To train from scratch:** Click `Run All`
 * **To use pre-trained models:** Run the following cells:
 
-  * **_0. Imports & Global Setting_** — execute the first three code cells
-  * **_1. Dataset / DataLoader_** — execute the first code cell
-  * **_2. Define Model_** — execute all code cells in this section
-  * **_5. Prediction & Submission_** — execute all code cells in this section
+    * **_0. Imports & Global Setting_** — execute the first three code cells
+    * **_1. Dataset / DataLoader_** — execute the first code cell
+    * **_2. Define Model_** — execute all code cells in this section
+    * **_5. Prediction & Submission_** — execute all code cells in this section
 
----
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
 ### 2. Detect Damage Types
 *Notebook: `damage_detection.ipynb`*
 
 * **To train from scratch:** Click `Run All`
 * **To use pre-trained models:** Run the following cells:
 
-  * **_0. Imports & Global Setting_** — execute all code cells in this section
-  * **_1. Define Model_** — execute all code cells in this section
-  * **_3. Prediction & Submission_** — execute all code cells in this section
+    * **_0. Imports & Global Setting_** — execute all code cells in this section
+    * **_1. Define Model_** — execute all code cells in this section
+    * **_3. Prediction & Submission_** — execute all code cells in this section
 
----
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ### 3. Classify Crack Presence
 *Notebook: `crack_classification.ipynb`*
@@ -129,25 +151,25 @@ Additionally, if you wish to work on multiple structure types (e.g., beam, colum
 * **To train from scratch:** Click `Run All`
 * **To use pre-trained models:** Run the following cells:
 
-  * **_0. Imports & Global Setting_** — execute the first three code cells
-  * **_1. Dataset / DataLoader_** — execute the first code cell
-  * **_2. Define Model_** — execute all code cells in this section
-  * **_5. Prediction & Submission_** — execute all code cells in this section
+    * **_0. Imports & Global Setting_** — execute the first three code cells
+    * **_1. Dataset / DataLoader_** — execute the first code cell
+    * **_2. Define Model_** — execute all code cells in this section
+    * **_5. Prediction & Submission_** — execute all code cells in this section
 
----
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ### 4. Generate Final Submission File
 *Notebook: `final_submission.ipynb`*
 
 * Click `Run All` to generate the final result:
 
-  ```
-  output/submission.csv
-  ```
+    ```
+    output/submission.csv
+    ```
 
----
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-## ✅ Verified System Configuration
+## 🛠️ Verified System Configuration
 
 This project has been tested and verified to run smoothly on a system with the following specifications:
 
